@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Mockup kalender poster Youmna Print">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F6F5"/>
+      <stop offset="1" stop-color="#ECEBEA"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g opacity="0.85">
+    <circle cx="620" cy="140" r="22" fill="#E5A800"/>
+    <circle cx="646" cy="140" r="22" fill="#0F56D3"/>
+    <circle cx="633" cy="163" r="22" fill="#0E9BB8"/>
+  </g>
+  <rect x="318" y="110" width="170" height="400" rx="12" fill="#1B1917" opacity="0.08" transform="translate(6 8)"/>
+  <rect x="312" y="104" width="170" height="400" rx="12" fill="#FFFFFF" stroke="#E4E1DE"/>
+  <rect x="312" y="104" width="170" height="90" rx="12" fill="#E5A800"/>
+  <text x="397" y="162" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700" font-size="40" fill="#1B1917">2027</text>
+  <g>
+    <rect x="336" y="224" width="122" height="8" rx="4" fill="#EFEDEB"/>
+    <rect x="336" y="244" width="96" height="8" rx="4" fill="#EFEDEB"/>
+    <rect x="336" y="264" width="110" height="8" rx="4" fill="#EFEDEB"/>
+  </g>
+  <g>
+    <circle cx="348" cy="312" r="6" fill="#EFEDEB"/>
+    <circle cx="368" cy="312" r="6" fill="#0F56D3"/>
+    <circle cx="388" cy="312" r="6" fill="#EFEDEB"/>
+    <circle cx="408" cy="312" r="6" fill="#EFEDEB"/>
+    <circle cx="428" cy="312" r="6" fill="#0E9BB8"/>
+    <circle cx="348" cy="334" r="6" fill="#EFEDEB"/>
+    <circle cx="368" cy="334" r="6" fill="#EFEDEB"/>
+    <circle cx="388" cy="334" r="6" fill="#E5A800"/>
+    <circle cx="408" cy="334" r="6" fill="#EFEDEB"/>
+    <circle cx="428" cy="334" r="6" fill="#EFEDEB"/>
+    <circle cx="348" cy="356" r="6" fill="#0F56D3"/>
+    <circle cx="368" cy="356" r="6" fill="#EFEDEB"/>
+    <circle cx="388" cy="356" r="6" fill="#EFEDEB"/>
+    <circle cx="408" cy="356" r="6" fill="#EFEDEB"/>
+    <circle cx="428" cy="356" r="6" fill="#EFEDEB"/>
+  </g>
+  <rect x="336" y="404" width="122" height="8" rx="4" fill="#EFEDEB"/>
+  <rect x="336" y="424" width="84" height="8" rx="4" fill="#EFEDEB"/>
+  <rect x="336" y="456" width="60" height="22" rx="11" fill="#0F56D3"/>
+</svg>

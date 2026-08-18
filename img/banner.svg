@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Mockup banner spanduk Youmna Print">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F6F5"/>
+      <stop offset="1" stop-color="#ECEBEA"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g opacity="0.85">
+    <circle cx="150" cy="130" r="22" fill="#0F56D3"/>
+    <circle cx="176" cy="130" r="22" fill="#0E9BB8"/>
+    <circle cx="163" cy="153" r="22" fill="#E5A800"/>
+  </g>
+  <g transform="rotate(-2 400 300)">
+    <rect x="120" y="120" width="560" height="330" rx="14" fill="#1B1917" opacity="0.08" transform="translate(8 10)"/>
+    <path d="M112 112 h576 v330 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 q-8 10 -16 0 v-20 h-576 z" fill="#FFFFFF" stroke="#E4E1DE"/>
+    <g>
+      <circle cx="152" cy="150" r="10" fill="none" stroke="#B7B0AA" stroke-width="4"/>
+      <circle cx="640" cy="150" r="10" fill="none" stroke="#B7B0AA" stroke-width="4"/>
+      <circle cx="152" cy="400" r="10" fill="none" stroke="#B7B0AA" stroke-width="4"/>
+      <circle cx="640" cy="400" r="10" fill="none" stroke="#B7B0AA" stroke-width="4"/>
+    </g>
+    <rect x="180" y="170" width="440" height="110" rx="12" fill="#0F56D3"/>
+    <rect x="210" y="196" width="200" height="16" rx="8" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="210" y="224" width="280" height="16" rx="8" fill="#FFFFFF" opacity="0.65"/>
+    <rect x="210" y="252" width="150" height="12" rx="6" fill="#FFFFFF" opacity="0.45"/>
+    <rect x="210" y="320" width="160" height="9" rx="4.5" fill="#EFEDEB"/>
+    <rect x="210" y="342" width="220" height="9" rx="4.5" fill="#EFEDEB"/>
+    <rect x="210" y="364" width="120" height="9" rx="4.5" fill="#EFEDEB"/>
+    <rect x="540" y="310" width="90" height="30" rx="15" fill="#1B1917"/>
+  </g>
+</svg>

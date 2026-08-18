@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Mockup pin custom Youmna Print">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F6F5"/>
+      <stop offset="1" stop-color="#ECEBEA"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g opacity="0.85">
+    <circle cx="150" cy="140" r="22" fill="#0E9BB8"/>
+    <circle cx="176" cy="140" r="22" fill="#E5A800"/>
+    <circle cx="163" cy="163" r="22" fill="#0F56D3"/>
+  </g>
+  <ellipse cx="400" cy="468" rx="190" ry="24" fill="#1B1917" opacity="0.08"/>
+  <g transform="rotate(-10 560 300)">
+    <path d="M560 160 v260" stroke="#C9C4BF" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <circle cx="560" cy="420" r="18" fill="#D8D4CF"/>
+    <circle cx="560" cy="300" r="85" fill="#FFFFFF" stroke="#E4E1DE" stroke-width="3"/>
+    <circle cx="560" cy="300" r="58" fill="#0F56D3"/>
+    <circle cx="560" cy="300" r="38" fill="#FFFFFF"/>
+    <circle cx="560" cy="300" r="14" fill="#0F56D3"/>
+  </g>
+  <g>
+    <circle cx="330" cy="240" r="96" fill="#FFFFFF" stroke="#E4E1DE" stroke-width="3"/>
+    <circle cx="330" cy="240" r="70" fill="#0E9BB8" opacity="0.85"/>
+    <circle cx="330" cy="240" r="46" fill="#FFFFFF"/>
+    <circle cx="330" cy="240" r="18" fill="#0E9BB8"/>
+  </g>
+  <g>
+    <circle cx="330" cy="430" r="72" fill="#FFFFFF" stroke="#E4E1DE" stroke-width="3"/>
+    <circle cx="330" cy="430" r="50" fill="#E5A800"/>
+    <rect x="308" y="420" width="44" height="20" rx="6" fill="#FFFFFF" opacity="0.9"/>
+  </g>
+</svg>
