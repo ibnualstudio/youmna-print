@@ -148,6 +148,68 @@
     });
   }
 
+  /* ---------- Hero slider ---------- */
+  var heroSlider = document.getElementById("heroSlider");
+  if (heroSlider) {
+    var slidesTrack = heroSlider.querySelector(".hero-slides");
+    var dotsWrap = heroSlider.querySelector(".hero-slider-dots");
+    var slideCount = slidesTrack.children.length;
+    var heroIndex = 0;
+    var heroTimer = null;
+    var reduceMotion =
+      window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var dots = [];
+
+    for (var di = 0; di < slideCount; di++) {
+      (function (i) {
+        var dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "hero-slider-dot" + (i === 0 ? " active" : "");
+        dot.setAttribute("aria-label", "Lihat slide " + (i + 1));
+        dot.addEventListener("click", function () {
+          goTo(i);
+          restart();
+        });
+        dotsWrap.appendChild(dot);
+        dots.push(dot);
+      })(di);
+    }
+
+    function goTo(i) {
+      heroIndex = (i + slideCount) % slideCount;
+      slidesTrack.style.transform = "translateX(-" + heroIndex * 100 + "%)";
+      for (var j = 0; j < dots.length; j++) {
+        dots[j].classList.toggle("active", j === heroIndex);
+      }
+    }
+
+    function restart() {
+      if (reduceMotion) return;
+      clearInterval(heroTimer);
+      heroTimer = setInterval(function () { goTo(heroIndex + 1); }, 4500);
+    }
+
+    if (!reduceMotion) restart();
+
+    heroSlider.addEventListener("mouseenter", function () { clearInterval(heroTimer); });
+    heroSlider.addEventListener("mouseleave", restart);
+    heroSlider.addEventListener("focusin", function () { clearInterval(heroTimer); });
+    heroSlider.addEventListener("focusout", restart);
+
+    var touchX = null;
+    heroSlider.addEventListener("touchstart", function (e) {
+      touchX = e.touches[0].clientX;
+      clearInterval(heroTimer);
+    }, { passive: true });
+    heroSlider.addEventListener("touchend", function (e) {
+      if (touchX === null) return;
+      var dx = e.changedTouches[0].clientX - touchX;
+      if (Math.abs(dx) > 40) goTo(heroIndex + (dx < 0 ? 1 : -1));
+      touchX = null;
+      restart();
+    }, { passive: true });
+  }
+
   /* ---------- Footer year ---------- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();

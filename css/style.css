@@ -329,6 +329,75 @@ p { margin: 0 0 1em; }
   box-shadow: var(--shadow-lg);
 }
 
+/* ---------- Hero slider ---------- */
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  background: var(--surface);
+}
+
+.hero-slides {
+  display: flex;
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.hero-slide {
+  position: relative;
+  min-width: 100%;
+}
+
+.hero-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  object-fit: contain;
+}
+
+.hero-slide-label {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-md);
+}
+
+.hero-slider-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 2;
+}
+
+.hero-slider-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-slider-dot.active {
+  width: 22px;
+  background: var(--accent);
+}
+
 .float-chip {
   position: absolute;
   display: flex;
